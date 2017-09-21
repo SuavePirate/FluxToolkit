@@ -35,9 +35,9 @@ namespace FluxToolkit
         /// </summary>
         /// <typeparam name="TData">The type of data the dispatcher is sending</typeparam>
         /// <param name="eventType">The name of the event to subscribe to</param>
-        protected virtual void Subscribe<TData>(string eventType)
+        protected virtual void Subscribe<TArgs>(string eventType)
         {
-            Dispatcher.Subscribe<IActions, TData>(this, eventType, (sender, data) => ReceiveEvent(eventType, data));
+            Dispatcher.Subscribe<IActions, TArgs>(this, eventType, (sender, data) => ReceiveEvent(eventType, data));
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace FluxToolkit
         /// <typeparam name="TData">The type of data from the dispatcher</typeparam>
         /// <param name="eventType">The name of the event being fied</param>
         /// <param name="data">The data sent from the dispatcher</param>
-        protected virtual void ReceiveEvent<TData>(string eventType, TData data)
+        protected virtual void ReceiveEvent<TArgs>(string eventType, TArgs data)
         {
             // when we receive an event, we need to ensure that the event is then emitted to the views that are subscribed to the store.
             Emit(eventType);
