@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+    <!-- The identifier that must be unique within the hosting gallery -->
+    <id>FluxToolkit</id>
+
+    <!-- The package version number that is used when resolving dependencies -->
+    <version>2017.09.22</version>
+
+    <!-- Authors contain text that appears directly on the gallery -->
+    <authors>Alex Dunn</authors>
+
+    <!-- Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  -->
+    <owners>SuavePirate</owners>
+
+    <!-- License and project URLs provide links for the gallery -->
+    <licenseUrl>https://raw.githubusercontent.com/SuavePirate/FluxToolkit/master/LICENSE</licenseUrl>
+    <projectUrl>http://github.com/SuavePirate/FluxToolkit</projectUrl>
+
+    <!-- The icon is used in Visual Studio's package manager UI -->
+    <iconUrl>https://alexdunndev.files.wordpress.com/2017/02/xamagonflux.png?w=609&h=510&crop=1</iconUrl>
+
+    <!-- If true, this value prompts the user to accept the license when
+            installing the package. -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <!-- Any details about this particular release -->
+    <releaseNotes>Initial release</releaseNotes>
+
+    <!-- The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. -->
+    <description>https://alexdunndev.files.wordpress.com/2017/02/xamagonflux.png?w=609&h=510&crop=1</description>
+
+    <!-- Copyright information -->
+    <copyright>Copyright ©2017 Alex Dunn</copyright>
+
+    <!-- Tags appear in the gallery and can be used for tag searches -->
+    <tags>xamarin uwp flux facebook design pattern architecture</tags>
+
+    <!-- Dependencies are automatically installed when the package is installed -->
+    <dependencies>
+    <!-- This should ideally be empty for the life of this project - it should be portable to any .NET project -->
+    </dependencies>
+    </metadata>
+
+    <files>
+    <!-- TODO: add read me file when installed to give brief explanation of flux and the purpose of the toolkit -->
+    </files>
+</package>

@@ -13,9 +13,10 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <PackageId>FluxToolkit</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>2017.09.22</PackageVersion>
     <Authors>adunn</Authors>
-    <Description>FluxToolkit</Description>
+    <Description>A set of tools that provide the core components for building Applications in .NET with the Flux design pattern including a universal Dispatcher, Store implementation, and contracts to restrict the flow of data.</Description>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include=".nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Definitions\" />
