@@ -1,12 +1,15 @@
 ﻿using System;
 namespace FluxToolkit.Definitions
 {
+    public interface IStore
+    {
+        event EventHandler<StoreEventArgs> OnEmitted;
+    }
     /// <summary>
     /// Definition contract for a Flux Store.
     /// </summary>
-    public interface IStore<TData>
+    public interface IStore<TData> : IStore
     {
-        event EventHandler<StoreEventArgs> OnEmitted;
         TData Data { get; set; }
     }
 }

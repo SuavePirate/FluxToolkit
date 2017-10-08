@@ -13,8 +13,8 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <PackageId>FluxToolkit</PackageId>
-    <PackageVersion>2017.09.22</PackageVersion>
-    <Authors>adunn</Authors>
+    <PackageVersion>2017.10.08</PackageVersion>
+    <Authors>SuavePirate</Authors>
     <Description>A set of tools that provide the core components for building Applications in .NET with the Flux design pattern including a universal Dispatcher, Store implementation, and contracts to restrict the flow of data.</Description>
     <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
